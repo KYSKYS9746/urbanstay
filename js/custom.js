@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     $('.main_visual .mainvisual_slide').slick({
         arrows: false,
         autoplaySpeed: 4000,
@@ -16,11 +16,21 @@ $(function(){
     $('.main_recommend .main_recommend_slide').slick({
         slidesToShow: 4,
         autoplay: true,
-        
+
         speed: 6000,
         autoplaySpeed: 0,
         // cssEase: 'linear', 
         arrows: false,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    pauseOnHover: false
+                }
+            }
+        ]
     });
 
 
